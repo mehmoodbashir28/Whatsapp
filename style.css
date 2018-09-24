@@ -1,93 +1,137 @@
-   body{
-   color: #151515;
-   font-family: 'Roboto', sans-serif;
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
 }
-
-
-   img{
-    height: 70px;
-    border-radius: 60px;
-    width: 70px;
-}
-.main{
-	display: flex;
-	justify-content: center;
-	height: 100%;
-}
-.contact-list{
-	width: 35%;
-	height: 100%;
-	overflow-y: scroll;
-}
-.user-info{
-	width:65%;
-	height: 100%;
-}
-.meh{
-	border: 2px solid black;
-}
-.person-img {
-	height: 60px;
-	width: 60px;
-	background-image: url(contactimg/ghani.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	border-radius: 50px;
-}
-.detail-msg
+header
 {
-	display: flex;
-	padding: 1em;
-	border-bottom: 0.1px solid #dbdbdb;
-}
-.msg{
-	display: flex;
-	color: #515367;
-}
-.second-detail{
-	padding: 5px;
-}
-.third-detail{
-	display: flex;
-}
-i{
-	padding-right: 9px;
-	margin-top: 5px;
-	color: #999999;
-}
+    padding: 35px 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap !important;
+    align-content: flex-start;
+    background-color: #eaeaea;
+    width: 100%;
+    font-size: 3em;
 
-.time{
-	margin-top: 5px;
-	margin-left: auto;
-	color: #999999;
 }
-/*
-
-	margin: auto;
-    margin-top: 25px;
-    margin-bottom: 16px;
-}	
-
-h2{
-	text-align: center;
-}
-
-.user-det{
-	display: inline-block;
-}*/
-
-.user-info
+.span
 {
-	display: flex;
+    background:linear-gradient(to right,#b8e6d0,#00e676,#b8e6d0);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+    font-weight: bold;
 }
-.info-img
-{
-	height: 100px;
-	width: 100px;
-	background-image: url(contactimg/ghani.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	border-radius: 50px;
+
+.main-container {
+    display: flex;
+}
+
+.chats-list{
+    overflow: scroll;
+    
+}
+
+.chats-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+}
+
+.contact-chat-info {
+    padding: 8px;
+    margin-left: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h5 {
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+h6 {
+    margin: 0;
+    color: #BDBDBD;
+    font-weight: 100;  
+}
+
+p{
+    margin: 0;
+    font-size: 12px;
+    color: #9E9E9E;   
+    min-width: 50%;
+}
+
+span {
+    color: #9E9E9E;   
+    margin-right: 5px;
+}
+
+.contact-profile-pic {
+    height: 50px;
+    width: 50px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 500px;
+}
+
+
+.chat{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    margin-top: 3em;
+    color: #BDBDBD;
+    font-weight: 100;
+}
+
+.chats-list-item:hover {
+    cursor: pointer;
+    background-color: #F5F5F5;
+}
+
+.double-ticks {
+    color: #29B6F6;
+}
+
+.chat-detail {
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-photo{
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1000px;
+}
+
+.dial-icon, .email-icon {
+    font-size: 2em;
+}
+
+.dial-icon {
+    color: #3c8105;
+}
+
+.email-icon {
+    color: #8f478e;
 }

@@ -1,2 +1,8 @@
-# Whatsapp
-you can see my work here ----->   https://mehmoodbashir28.github.io/Whatsapp/.
+# whatsapp-project
+
+## Langauges
+- HTML
+- CSS 
+- Javascript
+
+You can see website here: https://hadiakhan785.github.io/whatsapp-project/

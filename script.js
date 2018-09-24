@@ -1,115 +1,127 @@
 let contacts = [
-	{	
-		imgURL: "ali.jpg",
-		name: "Ali",
-		phoneIcon: "<i class='fas fa-phone'></i>",
-		number: "0300-1234567",
-		envelop: "<i class='far fa-envelope'></i>",
-		email: "ALi123@example.com",
-		detail:"sent",			
-		status: "Hey there! I am using WhatsApp. "
-	},
+    {
+        name: "Ali",
+        imgURL: "ali.jpg",
+        message: "blah blah blah blah blah bl...",
+        icon: `<i class="fas fa-check"></i>`,
+        number: `0300-1234567`,
+        email: `ALi123@example.com`,
+        'chat-message': `Hey there! I am using WhatsApp.`
+    },
 
-	{	
-		imgURL: "ahmed.jpg",
-		name: "ahmed",
-		phoneIcon: "<i class='fas fa-phone'></i>",
-		number: "0313-2239567",
-		envelop: "<i class='far fa-envelope'></i>",
-		email: "Ahmed234@example.com",
-		detail:"seen",	
-		status: "Stay there to prove everyone wrong. "
-	},
+    {
+        name: "Ahmed",
+        imgURL: "ahmed.jpg",
+        message: "blah blah blah blah blah bl...",
+        icon: `<i class="fas fa-check-double double-ticks"></i>`,
+        number: `0313-2239567`,
+        email: `Ahmed234@example.com`,
+        'chat-message': `Stay there to prove everyone wrong.`
+    },
 
-	{	
-		imgURL: "zeeshan.jpg",
-		name: "Zeeshan",
-		phoneIcon: "<i class='fas fa-phone'></i>",
-		number: "0321-5236561",
-		envelop: "<i class='far fa-envelope'></i>",
-		email: "Zeeshan345@example.com",
-		detail:"sent",
-		status: "urgent calls only. "
-	},
+    {
+        name: "zeeshan",
+        imgURL: "zeeshan.jpg",
+        message: "blah blah blah blah blah bl...",
+        icon: `<i class="fas fa-clock"></i>`,
+        number: `0321-5236561`,
+        email: `Zeeshan345@example.com`,
+        'chat-message': `urgent calls only.`
+    },
 
-	{	
-		imgURL: "ahsan.jpg",
-		name: "Ahsan",
-		phoneIcon: "<i class='fas fa-phone'></i>",
-		number: "0345-2224569",
-		envelop: "<i class='far fa-envelope'></i>",
-		email: "Ahsan456@example.com",
-		detail:"seen",
-		status: "busy "
-	},
+    {
+        name: "Ahsan",
+        imgURL: "ahsan.jpg",
+        message: "blah blah blah blah blah bl...",
+        icon: `<i class="fas fa-check"></i>`,
+        number: `909090909092564656`,
+        email: `Ahsan456@example.com`,
+        'chat-message': `busy`
+    },
 
-	{	
-		imgURL: "irfan.jpg",
-		name: "Irfan",
-		phoneIcon: "<i class='fas fa-phone'></i>",
-		number: "0321-2951489",
-		envelop: "<i class='far fa-envelope'></i>",
-		email: "Irfan567@example.com",
-		detail:"seen",
-		status: "sleeping. "
-	},
+    {
+        name: "irfan",
+        imgURL: "irfan.jpg",
+        message: "blah blah blah blah blah bl...",
+        icon: `<i class="fas fa-check-double double-ticks"></i>`,
+        number: `0321-2951489`,
+        email: `Irfan567@example.com`,
+        'chat-message': `sleeping.`
+    },
 
-	{	
-		imgURL: "arman.jpg",
-		name: "Arman",
-		phoneIcon: "<i class='fas fa-phone'></i>",
-		number: "033-6534564",
-		envelop: "<i class='far fa-envelope'></i>",
-		email: "Arman678@example.com",
-		detail:"not sent",
-		status: "new number. "
-	},
+    {
+        name: "arman",
+        imgURL: "arman.jpg",
+        message: "blah blah blah blah blah bl...",
+        icon: `<i class="fas fa-clock"></i>`,
+        number: `0331-6534564`,
+        email: `Arman678@example.com`,
+        'chat-message': `new number.`
+    },
 
-	{	
-		imgURL: "hassan.jpg",
-		name: "Hassan",
-		phoneIcon: "<i class='fas fa-phone'></i>",
-		number: "034-39814563",
-		envelop: "<i class='far fa-envelope'></i>",
-		email: "Hassan789@example.com",
-		detail:"seen",
-		status: "watching movie. "
-	},
+    {
+        name: "hasan",
+        imgURL: "hassan.jpg",
+        message: "blah blah blah blah blah bl...",
+        icon: `<i class="fas fa-check"></i>`,
+        number: `0334-39814563`,
+        email: `Hassan789@example.com`,
+        'chat-message': `watching movie.`
+    },
 
-	{	
-		imgURL: "ghani.jpg",
-		name: "Ghani",
-		phoneIcon: "<i class='fas fa-phone'></i>",
-		number: "0315-2444560",
-		envelop: "<i class='far fa-envelope'></i>",
-		email: "Ghani987@example.com",
-		detail:"sent",		
-		status: "battery about to die. "
-	}
+    {
+        name: "ghani",
+        imgURL: "ghani.jpg",
+        message: "blah blah blah blah blah bl...",
+        icon: `<i class="fas fa-check-double double-ticks"></i>`,
+        number: `0315-2444560`,
+        email: `Ghani987@example.com`,
+        'chat-message': `battery about to die.`
+    },
 
-];
+    {
+        name: "shamir zaman",
+        imgURL: "shamir.jpg",
+        message: "blah blah blah blah blah bl...",
+        icon: `<i class="fas fa-clock"></i>`,
+        number: `0300-2389`,
+        email: `shamir892@example.com`,
+        'chat-message': `At Gym.`
+    }
+]
 
-function initialize(){
-	userInfo = document.querySelector("section");
-	for(let i=0;i<contacts.length;i++){
-		userInfo.innerHTML+=
-		`
-			<div class="detail-msg">
-				<div class="person-img">
-				
-				</div>
-					<div class="second-detail">
-						<h4>${contacts[i].name}</h4>
-						<div class="third-detail">
-							<i class="fas fa-check"></i>
-							<p class="msg">blah blah blah blah</p>
-						</div>
-					</div>
-					<p class="time">yesterday</p>
-			</div>
+function initialize() {
+    let contactList = document.querySelector(".chats-list");
 
-		`;
-	}
+    for (let i = 0; i < contacts.length; i++) {
+        contactList.innerHTML += `<div class="chats-list-item" onclick="showChat(${i})">
+        <div class="contact-profile-pic" style="background-image: url(images/${contacts[i].imgURL});">
+
+        </div>
+
+        <div class="contact-chat-info">
+            <div class="name-section">
+                <h5>${contacts[i].name}</h5>
+                <h6>Yesterday</h6>
+            </div>
+            
+            <div>
+             <p><span>${contacts[i].icon}</span> ${contacts[i].message}</p>
+            </div>
+        </div>
+
+    </div>`;
+
+    }
 }
 
-// style="background-image: url(contactimg/${contacts[i].imgURL})"
+
+function showChat(indexNum) {
+    document.querySelector("h4").style = `display: none`;
+    document.querySelector(".chat-detail").style = `display: flex !important`;
+    document.querySelector(".contact-photo").style["background-image"] = `url(images/${contacts[indexNum].imgURL})`;
+    document.querySelector(".contact-name").innerHTML = contacts[indexNum].name;
+    document.querySelector(".contact-number").innerHTML = `<span class="dial-icon"><i class="fas fa-phone"></i></span> ${contacts[indexNum].number}`;
+    document.querySelector(".contact-email").innerHTML = `<span class="email-icon"><i class="far fa-envelope"></i></span> ${contacts[indexNum].email}`;
+    document.querySelector(".contact-message").innerHTML = contacts[indexNum]["chat-message"];
+}
