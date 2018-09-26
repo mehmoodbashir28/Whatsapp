@@ -19,6 +19,10 @@ header
     font-size: 3em;
 
 }
+#githubPagesLink:link{
+     text-decoration: none;
+     color: white !important;
+}
 .span
 {
     background:linear-gradient(to right,#b8e6d0,#00e676,#b8e6d0);
