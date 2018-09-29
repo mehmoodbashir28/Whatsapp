@@ -1,6 +1,4 @@
 # Whatsapp Web
-you can See my Work here ---> https://mehmoodbashir28.github.io/Whatsapp/.
-
 This is a simple one page Whataapp with fake contacts and info.
 ## Prerequisites
 Thing that are used in this Project:-
